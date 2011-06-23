@@ -1,0 +1,24 @@
+= Detroit RSpec Tool
+
+
+== DESCRIPTION
+
+The RSpec tool is used to run project specifications
+written with RSpec. Specifications are expected to found
+in the standard `spec/` directory unless otherwise specified
+in the tools options.
+
+
+== INSTALL
+
+  $ gem install detroit-dnote
+
+
+== COPYRIGHT
+
+Copyright (c) 2011 Thomas Sawyer
+
+GPL v.3 license
+
+See COPYING.rdoc and GPL3.txt file for details.
+

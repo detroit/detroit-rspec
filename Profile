@@ -1,0 +1,16 @@
+---
+name : detroit-rspec
+title: Detroit RSpec
+
+contact: trans <transfire@gmail.com>
+
+description:
+  RSpec plugin for Detroit build system.
+
+resources:
+  home: http://detroit.github.com/
+  code: http://github.com/detroit/detroit-rspec
+
+copyright:
+  (c) 2011 Thomas Sawyer
+
