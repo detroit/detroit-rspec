@@ -51,14 +51,21 @@ module Detroit
     # Additional command line options for rspec.
     attr_accessor :extra
 
-    #
-    def initialize_defaults
-      @loadpath = metadata.loadpath
 
-      @specs    = ['spec/**/*_spec.rb', 'spec/**/spec_*.rb']
-      @requires = []
-      @warning  = false
+    #  A S S E M B L Y  S T A T I O N S
+
+    # Attach test method to test assembly station.
+    def station_test
+      test
     end
+
+    # Attach document method to document assembly station.
+    def station_document
+      document
+    end
+
+
+    #  S E R V I C E  M E T H O D S
 
     # Run all specs.
     #
@@ -75,7 +82,16 @@ module Detroit
       run_specs('documentation')
     end
 
-    private
+  private
+
+    #
+    def initialize_defaults
+      @loadpath = metadata.loadpath
+
+      @specs    = ['spec/**/*_spec.rb', 'spec/**/spec_*.rb']
+      @requires = []
+      @warning  = false
+    end
 
     # Run rspecs.
     def run_specs(format=nil)
