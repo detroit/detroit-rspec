@@ -1,3 +1,5 @@
+require 'detroit/tool'
+
 module Detroit
 
   # Create new RSpec tool with specified +options+.
