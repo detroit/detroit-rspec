@@ -35,6 +35,9 @@ module Detroit
     # File glob(s) of spec files. Defaults to ['spec/**/*_spec.rb', 'spec/**/spec_*.rb'].
     attr_accessor :specs
 
+    # A more generic alternative to #specs.
+    alias_accessor :include, :specs
+
     # Paths to add $LOAD_PATH. Defaults to ['lib'].
     attr_accessor :loadpath
 
@@ -138,6 +141,12 @@ module Detroit
     #
     def initialize_requires
       require 'rspec/core'
+    end
+
+  public
+
+    def self.man_page
+      File.dirname(__FILE__)+'/../man/detroit-minitest.5'      
     end
 
   end
