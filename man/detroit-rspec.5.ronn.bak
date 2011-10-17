@@ -19,7 +19,7 @@ for defining an RSpec service.
 
   * `ignore` - Files to ignore by matching filename.
 
-  * `requires` - Scripts to require before executing specs.
+  * `requires` - Scripts to require before excuting specs.
 
   * `loadpath` - Directories to add to`$LOAD_PATH`. Defaults to `['lib']`.
 
@@ -58,7 +58,7 @@ For more information:
 
 Copyright (c) 2010 Thomas Sawyer, Rubyworks
 
-Detroit RSpec is distributable in accordance with the GPLv3 license.
+Detroit DNote is distributable in accordance with the GPLv3 license.
 
 
 ## SEE ALSO
