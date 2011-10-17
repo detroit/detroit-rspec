@@ -45,6 +45,15 @@ files can also be Ruby-based. See Detroit documentation for more
 details.
 
 
+## RESOURCES
+
+For more information:
+
+  * [API Documentation](http://rubydoc.info/gems/detroit-rspec)
+
+  * [Development Site](http://github.com/detroit/detroit-rspec)
+
+
 ## COPYRIGHT
 
 Copyright (c) 2010 Thomas Sawyer, Rubyworks
