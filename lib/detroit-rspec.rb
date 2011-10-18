@@ -146,7 +146,7 @@ module Detroit
   public
 
     def self.man_page
-      File.dirname(__FILE__)+'/../man/detroit-minitest.5'      
+      File.dirname(__FILE__)+'/../man/detroit-rspec.5'      
     end
 
   end
