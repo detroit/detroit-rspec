@@ -53,20 +53,30 @@ module Detroit
     # Format of RSpec output.
     attr_accessor :format
 
+    # Output file, STDOUT if nil.
+    attr_accessor :output
+
     # Additional command line options for rspec.
     attr_accessor :extra
 
 
-    #  A S S E M B L Y  S T A T I O N S
+    #  A S S E M B L Y  M E T H O D S
 
-    # Attach test method to test assembly station.
-    def station_test
-      test
+    #
+    def assemble?(station, options={})
+      when station
+      case :test then true
+      end
     end
 
-    # Attach document method to document assembly station.
-    def station_document
-      document
+    # Attach test method to test assembly.
+    #
+    # @todo Attach documentaton?
+    def assemble(station, options={})
+      when station
+      #case :document then document
+      case :test     then run
+      end
     end
 
 
@@ -115,9 +125,11 @@ module Detroit
         argv << "-w" if warning
         argv << %[-I"#{loadpath.join(':')}"] unless loadpath.empty?
         argv << %[-r"#{requires.join(':')}"] unless requires.empty?
+        argv << %[-f"#{format}"] if format
+        argv << %[-o"#{output}"] if output
         argv << files
-        argv << spec_options
-        argv << ['--format', "#{format}"] if format
+        argv << extra_options
+
         argv = argv.flatten
 
         trace "rspec " + argv.join(' ')
@@ -126,8 +138,8 @@ module Detroit
       end
     end
 
-    #
-    def spec_options
+    # Extra options.
+    def extra_options
       case extra
       when String
         extra.split(/\s+/)
