@@ -1,4 +1,6 @@
 ---
+source:
+- meta
 authors:
 - name: T. Sawyer
   email: transfire@gmail.com
@@ -6,25 +8,28 @@ copyrights:
 - holder: Thomas Sawyer
   year: '2011'
   license: GPL-3
-replacements: []
-conflicts: []
-requirements: []
+requirements:
+- name: rspec
+- name: detroit
 dependencies: []
+alternatives: []
+conflicts: []
 repositories: []
 resources:
   home: http://detroit.github.com/
   code: http://github.com/detroit/detroit-rspec
   mail: http://google.groups.com/group/rubyworks-mailinglist
+extra: {}
 load_path:
 - lib
-extra: {}
 revision: 0
-name: detroit-rspec
-source: []
-alternatives: []
+created: '2011-10-16'
+summary: RSpec plugin for Detroit
 title: Detroit RSpec
 version: 0.1.0
-summary: RSpec plugin for Detroit
+name: detroit-rspec
+suite: detroit
 description: RSpec plugin for Detroit build system. This plugin runs rspec specification
   durring the test phase.
-date: '2011-10-16'
+organization: rubyworks
+date: '2012-04-01'
