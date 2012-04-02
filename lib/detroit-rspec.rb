@@ -64,8 +64,8 @@ module Detroit
 
     #
     def assemble?(station, options={})
-      when station
-      case :test then true
+      case station
+      when :test then true
       end
     end
 
@@ -73,9 +73,9 @@ module Detroit
     #
     # @todo Attach documentaton?
     def assemble(station, options={})
-      when station
-      #case :document then document
-      case :test     then run
+      case station
+      #when :document then document
+      when :test     then run
       end
     end
 
