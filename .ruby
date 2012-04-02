@@ -9,8 +9,9 @@ copyrights:
   year: '2011'
   license: GPL-3
 requirements:
-- name: rspec
 - name: detroit
+  version: 0.3.0+
+- name: rspec
 dependencies: []
 alternatives: []
 conflicts: []
