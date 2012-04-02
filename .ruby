@@ -26,7 +26,7 @@ revision: 0
 created: '2011-10-16'
 summary: RSpec plugin for Detroit
 title: Detroit RSpec
-version: 0.1.0
+version: 0.2.0
 name: detroit-rspec
 suite: detroit
 description: RSpec plugin for Detroit build system. This plugin runs rspec specification
